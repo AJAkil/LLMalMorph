@@ -189,6 +189,8 @@ Continue this loop until all functions are merged. The function wise debugging a
 
 >f() 1 → Compile With M project → ✅ → Edit variant_gen_config.cfg → Run Script → Merged f() 1 and 2 in source file → Compile With M project → ❌ → Debug M project and fix the f() 2 → Paste debugged f() 2 in corresponding response .txt file → Edit  variant_gen_config.cfg → Run Script → Merged f() 1, 2(debugged) and 3 in source file → Repeat ... 
 
+> 💡 The amount of bugs that may originate while mutating source code is exhaustive and extremely hard to generalize to create an automated approach. We are working on simplifying the stitching process to have less manual intervention as possible.
+
 
 ## ⚠️ Usage Disclaimer
 
@@ -202,7 +204,7 @@ Continue this loop until all functions are merged. The function wise debugging a
 By accessing and using this software, you confirm that you understand and accept that any misuse is **solely your responsibility**, and that the authors and affiliated parties are fully exempt from any legal liability.
 
 ## ⚠️ Malware Samples Disclaimer
-This project relies on open-source malware source codes used during experiments. You can access them in a password protected archive `malware_samples.zip` from the directory `samples/experiment_samples`. Use the password: ***infected*** for the malware source code archive.
+This project relies on open-source malware source codes used during experiments. You can access them in a password protected archive `malware_samples_souce_codes.zip` from the directory `samples/experiment_samples`. Use the password: ***infected*** for the malware source code archive.
 
 - ⚠️ **Extract only in an isolated VM or sandbox environment.**
 - **Do NOT execute malware** on systems you care about.
