@@ -91,6 +91,7 @@ For clarity, assume the following:
 - You're mutating 5 functions in `file.c` of malware sample named **M**
 - Strategy used: `strategy 1`
 - LLM model used: `codestral`
+- You have access to the **M** malware project with source-code from where you can compile to generate a malware executable.
 
 
 
@@ -187,11 +188,11 @@ Update ```num_functions_merge_back = 3``` in the ```variant_gen_config.cfg``` an
 Continue this loop until all functions are merged. The function wise debugging and fixing the LLM response ensures the error doesnt propagate through the next steps. Here is a flow showing how the steps work:
 
 >f() 1 → Compile With M project → ✅ → Edit variant_gen_config.cfg → Run Script → Merged f() 1 and 2 in source file → Compile With M project → ❌ → Debug M project and fix the f() 2 → Paste debugged f() 2 in corresponding response .txt file → Edit  variant_gen_config.cfg → Run Script → Merged f() 1, 2(debugged) and 3 in source file → Repeat ... 
-`
+
 
 ## ⚠️ Usage Disclaimer
 
-**LLMalMorph is provided solely for academic and offensive security research purposes.** The framework enables mutation of malware source code to generate variants of open-source malware using large language models. By using this repository fully or partially, **you acknowledge and agree** to the following terms:
+**LLMalMorph is provided solely for academic and offensive security research purposes.** The framework enables mutation of malware source code to generate variants of open-source malware using large language models. This repository also contains source code of open-source malwares that were collected from other Github Repositories. By using this repository fully or partially, **you acknowledge and agree** to the following terms:
 
 1. The authors, contributors, and affiliated institutions **do not endorse**—and **are not responsible for**—any malicious, unethical, or illegal use of this software.
 2. **ALL USE IS AT YOUR OWN RISK.** Use of the software is provided **“as‑is,” without warranty** of any kind, either express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non‑infringement.
@@ -199,3 +200,14 @@ Continue this loop until all functions are merged. The function wise debugging a
 4. This project is intended for **educational and research contexts only**, such as academic study, vulnerability analysis, defensive testing, and improving security posture. **Misuse of this framework for the creation, distribution, or execution of harmful software is strictly discouraged** and may violate applicable laws.
 
 By accessing and using this software, you confirm that you understand and accept that any misuse is **solely your responsibility**, and that the authors and affiliated parties are fully exempt from any legal liability.
+
+## ⚠️ Malware Samples Disclaimer
+This project relies on open-source malware source codes used during experiments. You can access them in a password protected archive `malware_samples.zip` from the directory `samples/experiment_samples`. Use the password: ***infected*** for the malware source code archive.
+
+- ⚠️ **Extract only in an isolated VM or sandbox environment.**
+- **Do NOT execute malware** on systems you care about.
+- Use only **offline, isolated virtual environments** for analysis.
+- These samples are provided strictly for **educational and research purposes**.
+
+By downloading or using these samples, you acknowledge you are solely responsible for handling them safely and legally.
+
