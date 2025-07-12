@@ -204,12 +204,12 @@ Continue this loop until all functions are merged. The function wise debugging a
 By accessing and using this software, you confirm that you understand and accept that any misuse is **solely your responsibility**, and that the authors and affiliated parties are fully exempt from any legal liability.
 
 ## ⚠️ Malware Samples Disclaimer
-This project relies on open-source malware source codes used during experiments. You can access them in a password protected archive `malware_samples_souce_codes.zip` from the directory `samples/experiment_samples`. Use the password: ***infected*** for the malware source code archive.
+This project relies on open-source Windows malware source codes collected From the public repositories -  [Malware-Database](https://github.com/cryptwareapps/Malware-Database) and [MalwareSourceCode](https://github.com/vxunderground/MalwareSourceCode) used during experiments. You can access them in a password protected archive `malware_samples_souce_codes.zip` from the directory `samples/experiment_samples`. Use the password: ***infected*** for the malware source code archive.
 
 - ⚠️ **Extract only in an isolated VM or sandbox environment.**
 - **Do NOT execute malware** on systems you care about.
 - Use only **offline, isolated virtual environments** for analysis.
-- These samples are provided strictly for **educational and research purposes**.
+- These sample source codes are provided strictly for **educational and research purposes**.
 
-By downloading or using these samples, you acknowledge you are solely responsible for handling them safely and legally.
+By downloading or using these sample source codes, you acknowledge you are solely responsible for handling them safely and legally.
 
