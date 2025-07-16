@@ -1,6 +1,6 @@
 # LLMalMorph: On The Feasibility of Generating Variant Malware using Large-Language-Models
 
-LLMalMorph is a modular framework designed to mutate malware source code to generate malware variants using large language models (LLMs). 
+LLMalMorph is a modular framework designed to mutate malware source code to generate malware variants using large language models (LLMs). You can read the preprint [here](https://arxiv.org/abs/2507.09411).
 
 ## Table of Contents:
 - [Project Directory Structure](#project-directory-structure)
