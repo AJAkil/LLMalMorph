@@ -1,8 +1,8 @@
 '''
  python variant_source_generator.py \
     --num_functions_merge_back=2 \
-    --source_code_file_path=/home/newdrive/makil/projects/GenAI_Malware_Repository/development_code/selected_samples/exeinfector/source_codes/exeinfector_changed.cpp \
-    --cached_dir=/home/newdrive/makil/projects/GenAI_Malware_Repository/development_code/selected_samples/exeinfector/llm_generated_paper/strat_6/exeinfector_changed/codestral/4_functions
+    --source_code_file_path=/pathtosample/exeinfector/source_codes/exeinfector_changed.cpp \
+    --cached_dir=/pathtosample/exeinfector/llm_generated_paper/strat_6/exeinfector_changed/codestral/4_functions
 '''
 
 
@@ -222,10 +222,10 @@ def read_llm_responses(llm_responses_path_list):
 def parse_arguments_single_file_old():
     parser = argparse.ArgumentParser(
         description="Process input parameters for the script.")
-    parser.add_argument("--file_path_list_json_path", default="/home/newdrive/makil/projects/GenAI_Malware_Repository/development_code/selected_samples/exeinfector/llm_generated/strat_1/4_functions/codestral/exeinfector_changed.cpp_generated_file_path_list.json")
-    parser.add_argument("--parsed_info_json", default="/home/newdrive/makil/projects/GenAI_Malware_Repository/development_code/selected_samples/exeinfector/llm_generated/strat_1/4_functions/codestral/exeinfector_changed.cpp_parsed_info.json")
+    parser.add_argument("--file_path_list_json_path", default="/pathtosample/exeinfector/llm_generated/strat_1/4_functions/codestral/exeinfector_changed.cpp_generated_file_path_list.json")
+    parser.add_argument("--parsed_info_json", default="/pathtosample/exeinfector/llm_generated/strat_1/4_functions/codestral/exeinfector_changed.cpp_parsed_info.json")
     parser.add_argument("--variant_source_code_sub_dir",
-                        default="/home/newdrive/makil/projects/GenAI_Malware_Repository/development_code/selected_samples/exeinfector/llm_generated/strat_1/4_functions/codestral")
+                        default="/pathtosample/exeinfector/llm_generated/strat_1/4_functions/codestral")
     parser.add_argument("--file_extension", default="cpp")
     parser.add_argument("--source_code_response_format", default="backticks")
     parser.add_argument("--num_functions", type=int, default=4)
@@ -242,8 +242,8 @@ def parse_arguments_multifile():
     parser = argparse.ArgumentParser(description="Process input parameters for the script.")
 
     parser.add_argument(
-        "--source_code_dir", default="/home/newdrive/makil/projects/GenAI_Malware_Repository/development_code/selected_samples/Hidden_VNC_BOT/hiddenvnc_code_files")
-    parser.add_argument("--cached_dir", default="/home/newdrive/makil/projects/GenAI_Malware_Repository/development_code/selected_samples/Hidden_VNC_BOT/hiddenvnc_code_files/llm_generated/strat_3/5_functions/codestral")
+        "--source_code_dir", default="/pathtosample/Hidden_VNC_BOT/hiddenvnc_code_files")
+    parser.add_argument("--cached_dir", default="/pathtosample/Hidden_VNC_BOT/hiddenvnc_code_files/llm_generated/strat_3/5_functions/codestral")
     parser.add_argument("--num_functions_merge_back", type=int, default=4)
 
     return parser.parse_args()
@@ -252,8 +252,8 @@ def parse_arguments_single_file():
     parser = argparse.ArgumentParser(description="Process input parameters for the script.")
 
     parser.add_argument(
-        "--source_code_file_path", default="/home/newdrive/makil/projects/GenAI_Malware_Repository/development_code/selected_samples/exeinfector/source_codes/exeinfector_changed.cpp")
-    parser.add_argument("--cached_dir", default="/home/newdrive/makil/projects/GenAI_Malware_Repository/development_code/selected_samples/exeinfector/llm_generated_paper/strat_6/exeinfector_changed/codestral/4_functions")
+        "--source_code_file_path", default="/pathtoproject/projects/GenAI_Malware_Repository/development_code/selected_samples/exeinfector/source_codes/exeinfector_changed.cpp")
+    parser.add_argument("--cached_dir", default="/pathtoproject/projects/GenAI_Malware_Repository/development_code/selected_samples/exeinfector/llm_generated_paper/strat_6/exeinfector_changed/codestral/4_functions")
     parser.add_argument("--num_functions_merge_back", type=int, default=2)
     parser.add_argument("--func_gen_scheme", default="sequential")
 

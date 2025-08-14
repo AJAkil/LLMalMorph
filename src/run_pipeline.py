@@ -37,10 +37,10 @@ strat_all_order = []
 
 def process_arguments():
     arg_parser = argparse.ArgumentParser(description="Parse C/C++ source code")
-    arg_parser.add_argument("--source_file_dir", type=str, default="/home/newdrive/makil/projects/GenAI_Malware_Repository/development_code/selected_samples/exeinfector/source_codes/exeinfector_changed.cpp", help="The source files to be parsed")
+    arg_parser.add_argument("--source_file_dir", type=str, default="/pathtoproject/projects/GenAI_Malware_Repository/development_code/selected_samples/exeinfector/source_codes/exeinfector_changed.cpp", help="The source files to be parsed")
     arg_parser.add_argument("--num_func", type=int, default=1, help="The number of functions to generate")
     arg_parser.add_argument("--llm", type=str, default="codestral", help="The API to use for code completion")
-    arg_parser.add_argument("--output_dir", type=str, default="/home/newdrive/makil/projects/GenAI_Malware_Repository/development_code/selected_samples/exeinfector/llm_generated", help="The directory to save the output files")
+    arg_parser.add_argument("--output_dir", type=str, default="/pathtoprojectf/projects/GenAI_Malware_Repository/development_code/selected_samples/exeinfector/llm_generated", help="The directory to save the output files")
     arg_parser.add_argument("--strategy", type=str, default="strat_1", help="The strategy to generate code")
     arg_parser.add_argument("--prompt_type", type=str, default="detailed", help="The prompt to use for code completion")
     arg_parser.add_argument("--trials", type=int, default=1, help="To provoke llm once or more times")
